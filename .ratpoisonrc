@@ -1,0 +1,50 @@
+# prefix
+escape C-semicolon
+
+# enable window effects
+exec xcompmgr -c -f -D 5
+
+# workspaces stuff
+exec rpws init 10 -k
+
+unmanage panel
+#set font fixed-8
+set winname name
+set winfmt %n %s %t
+set winliststyle column
+set wingravity center
+set transgravity center
+set maxsizegravity c
+set padding 0 0 0 16
+set border 1
+set barborder 0
+set barpadding 4 4
+set bargravity ne
+set inputwidth 350
+set fgcolor grey
+set bgcolor #090909
+set fwcolor grey
+set bwcolor #343434
+rudeness 12
+
+# overriding C-; 'c' to start gnome-terminal instead of xterm
+bind c exec gnome-terminal
+bind e exec emacs
+bind f exec /opt/firefox/firefox
+bind C-w exec ~/.rpPaddingToggle.sh
+
+# Lich layouts [ ] [|] [|= [-] [+]
+bind F1 exec ratpoison -c "select -" -c "only" -c "next"
+bind F2 exec ratpoison -c "select -" -c "only" -c "hsplit" -c "next"
+bind F3 exec ratpoison -c "select -" -c "only" -c "hsplit" -c "next" -c "focusright" -c "next" -c "vsplit" -c "next"
+bind F4 exec ratpoison -c "select -" -c "only" -c "vsplit" -c "next"
+bind F5 exec ratpoison -c "select -" -c "only " -c "hsplit" -c next -c "vsplit" -c next -c "focusright" -c next -c "vsplit" -c "next"
+
+#exec xli -onroot ~/Desktop/light.jpg
+# restore wallpaper
+exec nitrogen --restore
+exec conky
+exec /usr/bin/trayer --edge bottom --align right --distance 0 --expand true --SetDockType true --SetPartialStrut true --transparent true --alpha 255 --tint 0 --widthtype pixel --width 100 --heighttype pixel --height 16
+
+exec /usr/bin/nm-applet
+exec dropbox start
