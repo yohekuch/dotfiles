@@ -11,9 +11,6 @@ setup() {
         type "$1" >/dev/null 2>&1
     }
 
-    symlink() {
-    }
-
     if [ -d "$dotfiles" ]; then
         (cd "$dotfiles" && git pull --rebase)
     else
