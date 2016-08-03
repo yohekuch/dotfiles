@@ -22,7 +22,8 @@ set tabstop=4
 set t_Co=256
 "colorscheme xoria256
 "colorscheme default
-colorscheme desert
+"colorscheme desert
+colorscheme elflord
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
