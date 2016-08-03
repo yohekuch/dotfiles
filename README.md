@@ -1,3 +1,6 @@
 # dotfiles
 My dotfiles
-test msg2q
+
+install
+wget -O - raw.githubusercontent.com/yohekuch/dotfiles/master/install_tools.sh | bash
+
