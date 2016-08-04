@@ -1,26 +1,35 @@
-#!/bin/sh
+#!/usr/bin/bash
 
-set -eu
+# install tools
+echo "install tools?(y/n)"
+read ans1
+case $ans1 in
+    y)
+        . install_tools.sh
+		;;
+    *)
+	    ;;
+esac
 
-setup() {
-    dotfiles=$HOME/dotfiles
-    account=yohekuch
-    repository=dotfiles
+# deploy
+echo "deploy dotfiles?(y/n)"
+read ans2
+case $ans2 in
+    y)
+        . deploy.sh
+		;;
+    *)
+	    ;;
+esac
 
-    has() {
-        type "$1" >/dev/null 2>&1
-    }
-
-    if [ -d "$dotfiles" ]; then
-        (cd "$dotfiles" && git pull --rebase)
-    else
-        git clone https://github.com/$account/$repository "$dotfiles"
-    fi
-
-    has ratpoison && ln -sf "$dotfiles/.ratpoisonrc" "$HOME/.ratpoisonrc"
-    has conky && ln -sf "$dotfiles/.conkyrc" "$HOME/.conkyrc"
-    has vim && ln -sf "$dotfiles/.vimrc" "$HOME/.vimrc"
-}
-
-setup
+# initialize
+echo "initialize dotfiles?(y/n)"
+read ans3
+case $ans3 in
+    y)
+        . init.sh
+		;;
+    *)
+	    ;;
+esac
 
