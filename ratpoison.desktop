@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ratpoison
+Comment=Launch ratpoison window manager
+Exec=/usr/bin/ratpoison
+TryExec=/usr/bin/ratpoison
+Type=Xsession
