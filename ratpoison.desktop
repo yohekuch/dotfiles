@@ -1,4 +1,5 @@
 [Desktop Entry]
+Encoding=UTF-8
 Name=ratpoison
 Comment=Launch ratpoison window manager
 Exec=/usr/bin/ratpoison
