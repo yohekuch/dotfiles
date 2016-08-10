@@ -1,0 +1,14 @@
+[user]
+	email = extentlambda@gmail.com
+	name = yohekuch
+[color]
+	ui = auto
+[core]
+	editor = emacs
+[alias]
+	br = branch
+	co = checkout
+	df = diff
+	sm = submodule
+	st = status
+	ps = push

@@ -2,6 +2,9 @@
 
 set -eu
 
+export DOTPATH=$HOME/dotfiles
+export DOTFILES_GITHUB_REPO=https://github.com/yohekuch/dotfiles.git
+
 # Update repository
 yes | sudo apt-get update
 yes | sudo apt-get upgrade
@@ -20,25 +23,21 @@ yes | sudo apt-get install git
 yes | sudo apt-get install curl
 yes | sudo apt-get install w3m
 
-is_exists() {
+is_command_exists() {
     which "$1" >/dev/null 2>&1
     return $?
 }
 
-dl_dotfiles_from_github()
+clone_from_github() {
+    if [ -d "$DOTPATH" ]; then
+        (cd "$DOTPATH" && git pull --rebase)
+    else
+        git clone --recursive "$DOTFILES_GITHUB_REPO" "$DOTPATH"
+    fi
+}
+
+clone_from_github
+
 
 # Deploy -- Download dotfiles from github. And create their symlinks.
 make deploy
-
-
-# initialize
-echo "initialize dotfiles?(y/n)"
-read ans3
-case $ans3 in
-    y)
-        . init.sh
-		;;
-    *)
-	    ;;
-esac
-
