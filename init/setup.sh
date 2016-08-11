@@ -38,6 +38,9 @@ clone_from_github() {
 
 clone_from_github
 
+cd $DOTPATH
 
-# Deploy -- Download dotfiles from github. And create their symlinks.
+# Deploy -- Create all the dotfile symlinks in home directory.
 make deploy
+
+make init
