@@ -2,11 +2,8 @@
 
 set -eu
 
-LINK=./deploy/foo/*
+LINK=${HOME}/dotfiles/deploy/foo
 
-for dtfile in $LINK
-#do echo $(basename ${dtfile})
-do ln -s ${dtfile} ${HOME}/$(basename ${dtfile})
+for dtfile in ${LINK}/.??*
+do ln -sf ${dtfile} ${HOME}/$(basename ${dtfile})
 done
-
-
