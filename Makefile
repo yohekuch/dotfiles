@@ -25,4 +25,4 @@ update:
 
 init:
 	@echo "init"
-
+	@bash $(DOTPATH)/init/init.sh

@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+zsh
+
 # Clone the repository
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
@@ -11,3 +13,5 @@ done
 
 # Set Zsh as default shell
 chsh -s /bin/zsh
+
+exit

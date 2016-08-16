@@ -43,4 +43,5 @@ cd $DOTPATH
 # Deploy -- Create all the dotfile symlinks in home directory.
 make deploy
 
+# Init -- Install packages and initial setup.
 make init
