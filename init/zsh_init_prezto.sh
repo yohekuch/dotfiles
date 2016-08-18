@@ -1,17 +1,18 @@
 #!/bin/zsh
 
-zsh
+set -eu
 
 # Clone the repository
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+if [ ! -d ${HOME}/.zprezto ]; then
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git \
+		"${ZDOTDIR:-$HOME}/.zprezto"
+fi
 
 # Create a new Zsh configuration by copying the Zsh configuration files provided
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    ln -sf "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
 # Set Zsh as default shell
-chsh -s /bin/zsh
-
-exit
+sudo chsh -s $(which zsh) ${USER}
