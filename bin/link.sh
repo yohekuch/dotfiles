@@ -2,7 +2,7 @@
 
 set -eu
 
-LINK=${HOME}/dotfiles/deploy/link
+LINK=${DOTPATH}/link
 
 for dtfile in ${LINK}/.??*; do
     ln -sf ${dtfile} ${HOME}/$(basename ${dtfile})

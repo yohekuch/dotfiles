@@ -41,7 +41,7 @@ clone_from_github
 cd $DOTPATH
 
 # Deploy -- Create all the dotfile symlinks in home directory.
-make deploy
+make link
 
 # Init -- Install packages and initial setup.
 make init

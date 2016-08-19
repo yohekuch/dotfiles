@@ -1,28 +1,18 @@
-.PHONY: all setup deploy install copy link init
+.PHONY: all setup link update init
 DOTPATH=${HOME}/dotfiles
-
 
 all: setup
 
-setup:
-	@echo "setup"
-
-install:
-	@echo "install"
-
-deploy:
-	@echo "deploy"
-	@bash $(DOTPATH)/deploy/deploy.sh
-
-copy:
-	@echo "copy"
+setup: update link init
 
 link:
-	@echo "link"
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/bin/link.sh
 
 update:
-	@echo "update"
+	git pull origin master
+	git submodule init
+	git submodule update
+	git submodule foreach git pull origin master
 
 init:
-	@echo "init"
-	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/init/init.sh
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/bin/init.sh
