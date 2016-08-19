@@ -23,6 +23,7 @@ yes | sudo apt-get install git
 yes | sudo apt-get install curl
 yes | sudo apt-get install w3m
 yes | sudo apt-get install tree
+yes | sudo apt-get install stow
 
 is_command_exists() {
     which "$1" >/dev/null 2>&1
