@@ -1,6 +1,7 @@
 # dotfiles
 My dotfiles
 
-install
-wget -O - raw.githubusercontent.com/yohekuch/dotfiles/master/install_tools.sh | bash
-
+## install
+```sh
+wget -O - raw.githubusercontent.com/yohekuch/dotfiles/master/bin/setup.sh | bash
+```
