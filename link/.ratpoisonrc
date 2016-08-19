@@ -31,7 +31,7 @@ rudeness 12
 bind c exec gnome-terminal
 bind e exec emacs
 bind f exec /opt/firefox/firefox
-bind C-w exec ~/.rpPaddingToggle.sh
+bind C-w exec ~/dotfiles/scripts/.rpPaddingToggle.sh
 
 # Lich layouts [ ] [|] [|= [-] [+]
 bind F1 exec ratpoison -c "select -" -c "only" -c "next"
