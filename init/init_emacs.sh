@@ -1,4 +1,1 @@
-#!/bin/bash
-
-set -eu
-
+emacs/build-emacs.sh
