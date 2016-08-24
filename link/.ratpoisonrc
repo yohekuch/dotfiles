@@ -40,8 +40,12 @@ bind F3 exec ratpoison -c "select -" -c "only" -c "hsplit" -c "next" -c "focusri
 bind F4 exec ratpoison -c "select -" -c "only" -c "vsplit" -c "next"
 bind F5 exec ratpoison -c "select -" -c "only " -c "hsplit" -c next -c "vsplit" -c next -c "focusright" -c next -c "vsplit" -c "next"
 
-#exec xli -onroot ~/Desktop/light.jpg
-# restore wallpaper
+# Quickly switch window
+definekey top M-Tab focus
+definekey top M-ISO_Left_Tab focusprev
+definekey top s-n next
+definekey top s-p prev
+
 exec nitrogen --restore
 exec conky
 exec /usr/bin/trayer --edge bottom --align right --distance 0 --expand true --SetDockType true --SetPartialStrut true --transparent true --alpha 255 --tint 0 --widthtype pixel --width 100 --heighttype pixel --height 16
