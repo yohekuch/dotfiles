@@ -28,7 +28,7 @@ set bwcolor #343434
 rudeness 12
 
 # overriding C-; 'c' to start gnome-terminal instead of xterm
-bind c exec gnome-terminal
+bind c exec urxvt
 bind e exec emacs
 bind f exec /opt/firefox/firefox
 bind C-w exec ~/dotfiles/scripts/.rpPaddingToggle.sh
