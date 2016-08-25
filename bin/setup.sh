@@ -11,6 +11,7 @@ yes | sudo apt-get upgrade
 
 # Install basic packages.
 yes | sudo apt-get install build-essential
+yes | sudo apt-get install rxvt-unicode-256color
 yes | sudo apt-get install gnome-terminal
 yes | sudo apt-get install vim
 yes | sudo apt-get install ratpoison
@@ -22,6 +23,7 @@ yes | sudo apt-get install zsh
 yes | sudo apt-get install git
 yes | sudo apt-get install curl
 yes | sudo apt-get install w3m
+yes | sudo apt-get install w3m-img
 yes | sudo apt-get install tree
 yes | sudo apt-get install stow
 
