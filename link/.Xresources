@@ -1,5 +1,5 @@
 ! Xft font config
-Xft.dpi:96
+Xft.dpi:72
 Xft.antialias:true
 Xft.rgba:rgb
 Xft.hinting:true
@@ -17,7 +17,7 @@ URxvt*scrollBar_right:true
 URxvt*scrollColor:#202020
 URxvt*transpscrollbar:true
 URxvt*saveLines:65535
-URxvt*font: xft:Monaco:style=Regular:size=11:antialias=true:hinting=true
+URxvt*font: xft:Monaco:style=Regular:size=13:antialias=true:hinting=true
 URxvt*letterSpace: -1
 ! Tango theme
 URxvt*background: #000000
