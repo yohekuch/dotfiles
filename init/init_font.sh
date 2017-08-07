@@ -10,8 +10,12 @@ FONTSDIR=${HOME}/Downloads/fonts
 mkdir -p ${FONTSDIR}
 
 # Monaco_Linux
-wget -P ${FONTSDIR} http://jorrel.googlepages.com/Monaco_Linux.ttf
+MONACO_URL="http://jorrel.googlepages.com/Monaco_Linux.ttf"
+MONACO_FONT="Monaco_Linux.ttf"
+fc-list | grep ${MONACO_FONT} || \
+    wget -P ${FONTSDIR} -O ${MONACO_FONT} ${MONACO_URL}
 
+# Install
 for font_file in ${FONTSDIR}/*.tt?; do
-    sudo cp ${font_file} /usr/share/fonts/truetype
+    sudo cp -f ${font_file} /usr/share/fonts/truetype
 done
