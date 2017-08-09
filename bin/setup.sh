@@ -26,6 +26,8 @@ yes | sudo apt-get install w3m
 yes | sudo apt-get install w3m-img
 yes | sudo apt-get install tree
 yes | sudo apt-get install stow
+yes | sudo apt-get install fcitx-mozc
+yes | sudo apt-get install emacs-mozc-bin
 
 is_command_exists() {
     which "$1" >/dev/null 2>&1
