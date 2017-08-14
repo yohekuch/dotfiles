@@ -7,3 +7,5 @@ for init_file in ${INIT_DIR}/init_*.sh; do
 done
 
 echo "xmodmap ~/.xmodmap" >>${HOME}/.profile
+echo "Init is complete."
+
