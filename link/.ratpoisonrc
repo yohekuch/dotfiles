@@ -51,4 +51,4 @@ exec conky
 exec /usr/bin/trayer --edge bottom --align right --distance 0 --expand true --SetDockType true --SetPartialStrut true --transparent true --alpha 255 --tint 0 --widthtype pixel --width 100 --heighttype pixel --height 16
 
 exec /usr/bin/nm-applet
-exec dropbox start
+exec ~/Downloads/.dropbox-dist/dropboxd
