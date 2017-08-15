@@ -52,3 +52,5 @@ exec /usr/bin/trayer --edge bottom --align right --distance 0 --expand true --Se
 
 exec /usr/bin/nm-applet
 exec ~/Downloads/.dropbox-dist/dropboxd
+exec fcitx-autostart
+exec xmodmap ~/.xmodmap
