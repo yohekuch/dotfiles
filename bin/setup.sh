@@ -51,3 +51,6 @@ make link
 
 # Init -- Install packages and initial setup.
 make init
+
+echo "All DONE!"
+
