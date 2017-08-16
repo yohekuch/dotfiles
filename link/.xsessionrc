@@ -1,3 +1,7 @@
 xset r rate 300 25
 xset s off
 xset dpms 1800 0 3600
+
+if [ -f ~/.Xmodmap ]; then
+    xmodmap ~/.Xmodmap
+fi
