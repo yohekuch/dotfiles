@@ -26,7 +26,16 @@ yes | sudo apt-get install w3m
 yes | sudo apt-get install w3m-img
 yes | sudo apt-get install tree
 yes | sudo apt-get install stow
+yes | sudo apt-get install im-config
+yes | sudo apt-get install fcitx
 yes | sudo apt-get install fcitx-mozc
+yes | sudo apt-get install fcitx-frontend-gtk2
+yes | sudo apt-get install fcitx-frontend-gtk3
+yes | sudo apt-get install fcitx-frontend-qt4
+yes | sudo apt-get install fcitx-frontend-qt5
+yes | sudo apt-get install fcitx-ui-classic
+yes | sudo apt-get install fcitx-config-gtk
+yes | sudo apt-get install mozc-utils-gui
 yes | sudo apt-get install emacs-mozc-bin
 
 is_command_exists() {

@@ -5,3 +5,8 @@ xset dpms 1800 0 3600
 if [ -f ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
 fi
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export DefaultIMModule=fcitx

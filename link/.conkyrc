@@ -28,7 +28,6 @@ uppercase no
 use_spacer none
 show_graph_scale no
 show_graph_range no
-double_buffer yes
 
 TEXT
 ${time %H:%M %d.%m.%Y} :: ${color grey}CPU:$color $cpu% ${cpubar cpu0 5,50} :: ${color grey}RAM:$color $memperc% ${membar 5,50} :: ${color grey}Ps:$color $processes ${color grey}:: ${color grey}Fs: $color${fs_used /}/${fs_size /} :: ${color grey}[${addr wlan0}]:Up:$color ${upspeed wlan0} ${color grey} - Down:$color ${downspeed wlan0} :: ${color grey}Battery:$color ${battery_percent BAT1} 
