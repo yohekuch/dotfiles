@@ -6,6 +6,10 @@ Xft.hinting:true
 Xft.hintstyle:hintslight
 Xft.lcdfilter:lcddefault
 
+! emacs
+emacs*useXIM:false
+emacs25.useXIM:false
+
 ! urxvt config
 URxvt*loginShell:true
 URxvt*inheritPixmap:true
@@ -19,6 +23,9 @@ URxvt*transpscrollbar:true
 URxvt*saveLines:65535
 URxvt*font: xft:Monaco:style=Regular:size=13:antialias=true:hinting=true
 URxvt*letterSpace: -1
+URxvt*perl-ext: xim-onthespot
+URxvt*inputMethod: fcitx
+URxvt*preeditType: OnTheSpot
 ! Tango theme
 URxvt*background: #000000
 URxvt*foreground: #FFFFFF
