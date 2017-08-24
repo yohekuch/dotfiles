@@ -27,10 +27,11 @@ set fwcolor grey
 set bwcolor #343434
 rudeness 12
 
-# overriding C-; 'c' to start gnome-terminal instead of xterm
+# Launch the most frequently used application easily
 bind c exec urxvt
 bind e exec emacs
-bind f exec /opt/firefox/firefox
+bind f exec firefox
+bind m exec pcmanfm
 bind C-w exec ~/dotfiles/scripts/.rpPaddingToggle.sh
 
 # Lich layouts [ ] [|] [|= [-] [+]
@@ -49,7 +50,6 @@ definekey top s-p prev
 exec nitrogen --restore
 exec conky
 exec /usr/bin/trayer --edge bottom --align right --distance 0 --expand true --SetDockType true --SetPartialStrut true --transparent true --alpha 255 --tint 0 --widthtype pixel --width 100 --heighttype pixel --height 16
-
 exec /usr/bin/nm-applet
 exec /usr/bin/dropbox start -i
 exec fcitx-autostart

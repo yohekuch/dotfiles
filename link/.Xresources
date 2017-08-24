@@ -7,7 +7,7 @@ Xft.hintstyle:hintslight
 Xft.lcdfilter:lcddefault
 
 ! emacs
-emacs*useXIM:false
+emacs.useXIM:false
 emacs25.useXIM:false
 
 ! urxvt config
