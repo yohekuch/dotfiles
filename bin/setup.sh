@@ -37,6 +37,7 @@ yes | sudo apt-get install fcitx-ui-classic
 yes | sudo apt-get install fcitx-config-gtk
 yes | sudo apt-get install mozc-utils-gui
 yes | sudo apt-get install emacs-mozc-bin
+yes | sudo apt-get install nautilus-dropbox
 
 is_command_exists() {
     which "$1" >/dev/null 2>&1

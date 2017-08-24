@@ -8,4 +8,3 @@ done
 
 echo "xmodmap ~/.xmodmap" >>${HOME}/.profile
 echo "Init is complete."
-
