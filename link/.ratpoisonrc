@@ -2,7 +2,7 @@
 escape C-semicolon
 
 # enable window effects
-exec xcompmgr -c -f -D 5
+# exec xcompmgr -c -f -D 5
 
 # workspaces stuff
 exec rpws init 10 -k
